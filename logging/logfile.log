@@ -1,0 +1,10 @@
+[2025-02-06 15:13:26] [ INFO ] [Main:13] [main] Iniciando sistema...
+[2025-02-06 15:13:26] [ INFO ] [Main:16] [main] Se procedera a registrar una nueva persona
+[2025-02-06 15:13:32] [ INFO ] [Persona:11] [<init>] Se ha creado a la persona -> Alan ,19 anios
+[2025-02-06 15:13:34] [ INFO ] [Main:16] [main] Se procedera a registrar una nueva persona
+[2025-02-06 15:13:53] [ INFO ] [Persona:11] [<init>] Se ha creado a la persona -> David ,67 anios
+[2025-02-06 15:13:56] [ INFO ] [Main:16] [main] Se procedera a registrar una nueva persona
+[2025-02-06 15:14:22] [ ERROR] [Main:27] [main] Se ha ingresado una edad invalida, la persona no ha sido registrada.
+[2025-02-06 15:14:24] [ INFO ] [Main:16] [main] Se procedera a registrar una nueva persona
+[2025-02-06 15:14:34] [ ERROR] [Main:27] [main] Se ha ingresado una edad invalida, la persona no ha sido registrada.
+[2025-02-06 15:14:37] [ INFO ] [Main:36] [main] Cerrando sistema...
