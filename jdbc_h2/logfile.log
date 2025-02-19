@@ -1,0 +1,14 @@
+[2025-02-19 14:33:33] [ INFO ] [Main:26] [main] Iniciando sistema...
+[2025-02-19 14:33:33] [ INFO ] [Main:38] [main] Devolviendo los datos en la DB..
+[2025-02-19 14:33:33] [ INFO ] [Main:39] [main] ID |  Nombre   |  Tipo 
+[2025-02-19 14:33:33] [ INFO ] [Main:41] [main] 1 | Firulais | Perro
+[2025-02-19 14:33:33] [ INFO ] [Main:41] [main] 2 | Garfield | Gato
+[2025-02-19 14:33:33] [ INFO ] [Main:41] [main] 3 | Zeus | Perro
+[2025-02-19 14:33:33] [ INFO ] [Main:41] [main] 4 | Goat | Cabra
+[2025-02-19 14:33:33] [ INFO ] [Main:41] [main] 5 | Winnie | Oso
+[2025-02-19 14:33:33] [ INFO ] [Main:44] [main] se procedera a eliminar el registro con ID =  4
+[2025-02-19 14:33:33] [ INFO ] [Main:47] [main] Volvemos a imprimar la tabla de la base..
+[2025-02-19 14:33:33] [ INFO ] [Main:50] [main] 1 | Firulais | Perro
+[2025-02-19 14:33:33] [ INFO ] [Main:50] [main] 2 | Garfield | Gato
+[2025-02-19 14:33:33] [ INFO ] [Main:50] [main] 3 | Zeus | Perro
+[2025-02-19 14:33:33] [ INFO ] [Main:50] [main] 5 | Winnie | Oso
