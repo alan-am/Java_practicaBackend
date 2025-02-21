@@ -1,0 +1,131 @@
+[2025-02-19 16:08:56] [ INFO ] [Main:8] [main] Iniciando sistema..
+[2025-02-21 14:45:32] [ WARN ] [MedicamentoServiceTest:25] [initDB] ---Inicio de Tests---
+[2025-02-21 14:45:32] [ ERROR] [MedicamentoServiceTest:33] [initDB] Parametro de conexión No soportado "INIT "
+Unsupported connection setting "INIT " [90113-230]
+[2025-02-21 14:46:36] [ WARN ] [MedicamentoServiceTest:25] [initDB] ---Inicio de Tests---
+[2025-02-21 14:46:36] [ INFO ] [MedicamentoServiceTest:30] [initDB] Conexion establecida| H2 |  init DB
+[2025-02-21 14:46:36] [ INFO ] [DaoH2Medicamento:28] [registrar] Conexion establecida| H2 |  registrar Medicamento
+[2025-02-21 14:46:36] [ INFO ] [DaoH2Medicamento:30] [registrar] Transaccion iniciada..
+[2025-02-21 14:46:36] [ INFO ] [DaoH2Medicamento:40] [registrar] Transaccion finalizada correctamente.., medicamento persistido en la DB
+[2025-02-21 14:46:36] [ INFO ] [DaoH2Medicamento:42] [registrar] Obteniendo el medicamento desde la db..
+[2025-02-21 14:46:36] [ INFO ] [DaoH2Medicamento:49] [registrar] Medicamento{id=null, codigo=3, nombre='Ibuprofeno', laboratorio='FarmaLabs', cantidad=67, precio=0.376}
+[2025-02-21 14:51:36] [ WARN ] [MedicamentoServiceTest:25] [initDB] ---Inicio de Tests---
+[2025-02-21 14:51:36] [ INFO ] [MedicamentoServiceTest:30] [initDB] Conexion establecida| H2 |  init DB
+[2025-02-21 14:51:36] [ INFO ] [DaoH2Medicamento:28] [registrar] Conexion establecida| H2 |  registrar Medicamento
+[2025-02-21 14:51:36] [ INFO ] [DaoH2Medicamento:30] [registrar] Transaccion iniciada..
+[2025-02-21 14:51:36] [ INFO ] [DaoH2Medicamento:40] [registrar] Transaccion finalizada correctamente.., medicamento persistido en la DB
+[2025-02-21 14:51:36] [ INFO ] [DaoH2Medicamento:42] [registrar] Obteniendo el medicamento desde la db..
+[2025-02-21 14:51:36] [ INFO ] [DaoH2Medicamento:49] [registrar] Medicamento{id=null, codigo=3, nombre='Ibuprofeno', laboratorio='FarmaLabs', cantidad=67, precio=0.376}
+[2025-02-21 15:03:47] [ WARN ] [MedicamentoServiceTest:25] [initDB] ---Inicio de Tests---
+[2025-02-21 15:03:47] [ ERROR] [MedicamentoServiceTest:33] [initDB] La base de datos puede que ya esté siendo utilizada: "C:/Users/Alan/Desktop/Java_practicaBackend/patron DAO/db_farmaceutica1.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/Alan/Desktop/Java_practicaBackend/patron DAO/db_farmaceutica1.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-230]
+[2025-02-21 15:04:16] [ WARN ] [MedicamentoServiceTest:25] [initDB] ---Inicio de Tests---
+[2025-02-21 15:04:16] [ INFO ] [MedicamentoServiceTest:30] [initDB] Conexion establecida| H2 |  init DB
+[2025-02-21 15:04:16] [ INFO ] [DaoH2Medicamento:28] [registrar] Conexion establecida| H2 |  registrar Medicamento
+[2025-02-21 15:04:16] [ INFO ] [DaoH2Medicamento:30] [registrar] Transaccion iniciada..
+[2025-02-21 15:04:16] [ INFO ] [DaoH2Medicamento:40] [registrar] Transaccion finalizada correctamente.., medicamento persistido en la DB
+[2025-02-21 15:04:16] [ INFO ] [DaoH2Medicamento:42] [registrar] Obteniendo el medicamento desde la db..
+[2025-02-21 15:04:16] [ INFO ] [DaoH2Medicamento:49] [registrar] Medicamento{id=null, codigo=3, nombre='Ibuprofeno', laboratorio='FarmaLabs', cantidad=67, precio=0.376}
+[2025-02-21 15:06:17] [ WARN ] [MedicamentoServiceTest:25] [initDB] ---Inicio de Tests---
+[2025-02-21 15:06:17] [ INFO ] [MedicamentoServiceTest:30] [initDB] Conexion establecida| H2 |  init DB
+[2025-02-21 15:06:17] [ INFO ] [DaoH2Medicamento:28] [registrar] Conexion establecida| H2 |  registrar Medicamento
+[2025-02-21 15:06:17] [ INFO ] [DaoH2Medicamento:30] [registrar] Transaccion iniciada..
+[2025-02-21 15:06:17] [ INFO ] [DaoH2Medicamento:40] [registrar] Transaccion finalizada correctamente.., medicamento persistido en la DB
+[2025-02-21 15:06:17] [ INFO ] [DaoH2Medicamento:41] [registrar] Filas Afectadas: 1
+[2025-02-21 15:06:17] [ INFO ] [DaoH2Medicamento:43] [registrar] Obteniendo el medicamento desde la db..
+[2025-02-21 15:06:17] [ INFO ] [DaoH2Medicamento:50] [registrar] Medicamento{id=null, codigo=3, nombre='Ibuprofeno', laboratorio='FarmaLabs', cantidad=67, precio=0.376}
+[2025-02-21 15:23:48] [ WARN ] [MedicamentoServiceTest:25] [initDB] ---Inicio de Tests---
+[2025-02-21 15:23:49] [ INFO ] [MedicamentoServiceTest:30] [initDB] Conexion establecida| H2 |  init DB
+[2025-02-21 15:23:49] [ INFO ] [DaoH2Medicamento:28] [registrar] Conexion establecida| H2 |  registrar Medicamento
+[2025-02-21 15:23:49] [ INFO ] [DaoH2Medicamento:30] [registrar] Transaccion iniciada..
+[2025-02-21 15:23:49] [ INFO ] [DaoH2Medicamento:40] [registrar] Transaccion finalizada correctamente.., medicamento persistido en la DB
+[2025-02-21 15:23:49] [ INFO ] [DaoH2Medicamento:41] [registrar] Filas Afectadas: 1
+[2025-02-21 15:23:49] [ INFO ] [DaoH2Medicamento:43] [registrar] Obteniendo el medicamento desde la db..
+[2025-02-21 15:23:49] [ WARN ] [DaoH2Medicamento:47] [registrar] 3
+[2025-02-21 15:23:49] [ INFO ] [DaoH2Medicamento:52] [registrar] Medicamento{id=null, codigo=3, nombre='Ibuprofeno', laboratorio='FarmaLabs', cantidad=67, precio=0.376}
+[2025-02-21 15:25:55] [ WARN ] [MedicamentoServiceTest:25] [initDB] ---Inicio de Tests---
+[2025-02-21 15:25:56] [ INFO ] [MedicamentoServiceTest:30] [initDB] Conexion establecida| H2 |  init DB
+[2025-02-21 15:25:56] [ INFO ] [DaoH2Medicamento:28] [registrar] Conexion establecida| H2 |  registrar Medicamento
+[2025-02-21 15:25:56] [ INFO ] [DaoH2Medicamento:30] [registrar] Transaccion iniciada..
+[2025-02-21 15:25:56] [ INFO ] [DaoH2Medicamento:40] [registrar] Transaccion finalizada correctamente.., medicamento persistido en la DB
+[2025-02-21 15:25:56] [ INFO ] [DaoH2Medicamento:41] [registrar] Filas Afectadas: 1
+[2025-02-21 15:25:56] [ INFO ] [DaoH2Medicamento:43] [registrar] Obteniendo el medicamento desde la db..
+[2025-02-21 15:25:56] [ INFO ] [DaoH2Medicamento:50] [registrar] Medicamento{id=3, codigo=2401, nombre='Ibuprofeno', laboratorio='FarmaLabs', cantidad=67, precio=0.376}
+[2025-02-21 15:58:31] [ WARN ] [MedicamentoServiceTest:25] [initDB] ---Inicio de Tests---
+[2025-02-21 15:58:32] [ INFO ] [MedicamentoServiceTest:30] [initDB] Conexion establecida| H2 |  init DB
+[2025-02-21 15:58:32] [ INFO ] [DaoH2Medicamento:112] [buscarPoId] Conexion establecida| H2 |  buscar por Medicamento por ID
+[2025-02-21 15:58:32] [ INFO ] [DaoH2Medicamento:116] [buscarPoId] Consulta ejecutada..
+[2025-02-21 15:58:32] [ INFO ] [DaoH2Medicamento:119] [buscarPoId] Medicamento{id=1, codigo=5872, nombre='Paracetamol', laboratorio='Bayer', cantidad=24, precio=0.23}
+[2025-02-21 16:09:35] [ WARN ] [MedicamentoServiceTest:26] [initDB] ---Inicio de Tests---
+[2025-02-21 16:09:36] [ INFO ] [MedicamentoServiceTest:31] [initDB] Conexion establecida| H2 |  init DB
+[2025-02-21 16:09:36] [ INFO ] [DaoH2Medicamento:91] [buscarPorCampo] Conexion establecida| H2 |  buscar por nombre Medicamento/s
+[2025-02-21 16:09:36] [ INFO ] [DaoH2Medicamento:97] [buscarPorCampo] Medicamento coincidente: Medicamento{id=2, codigo=2345, nombre='Ibuprofeno', laboratorio='Pfizer', cantidad=67, precio=0.5}
+[2025-02-21 16:09:36] [ INFO ] [DaoH2Medicamento:97] [buscarPorCampo] Medicamento coincidente: Medicamento{id=3, codigo=2345, nombre='Ibuprofeno', laboratorio='Wakanda', cantidad=153, precio=0.68}
+[2025-02-21 16:10:06] [ WARN ] [MedicamentoServiceTest:26] [initDB] ---Inicio de Tests---
+[2025-02-21 16:10:06] [ INFO ] [MedicamentoServiceTest:31] [initDB] Conexion establecida| H2 |  init DB
+[2025-02-21 16:10:06] [ INFO ] [DaoH2Medicamento:28] [registrar] Conexion establecida| H2 |  registrar Medicamento
+[2025-02-21 16:10:06] [ INFO ] [DaoH2Medicamento:30] [registrar] Transaccion iniciada..
+[2025-02-21 16:10:06] [ INFO ] [DaoH2Medicamento:40] [registrar] Transaccion finalizada correctamente.., medicamento persistido en la DB
+[2025-02-21 16:10:06] [ INFO ] [DaoH2Medicamento:41] [registrar] Filas Afectadas: 1
+[2025-02-21 16:10:06] [ INFO ] [DaoH2Medicamento:43] [registrar] Obteniendo el medicamento desde la db..
+[2025-02-21 16:10:06] [ INFO ] [DaoH2Medicamento:50] [registrar] Medicamento{id=4, codigo=2401, nombre='Ibuprofeno', laboratorio='FarmaLabs', cantidad=67, precio=0.376}
+[2025-02-21 16:10:06] [ INFO ] [DaoH2Medicamento:113] [buscarPoId] Conexion establecida| H2 |  buscar por Medicamento por ID
+[2025-02-21 16:10:06] [ INFO ] [DaoH2Medicamento:117] [buscarPoId] Consulta ejecutada..
+[2025-02-21 16:10:06] [ INFO ] [DaoH2Medicamento:120] [buscarPoId] Medicamento{id=1, codigo=5872, nombre='Paracetamol', laboratorio='Bayer', cantidad=24, precio=0.23}
+[2025-02-21 16:10:06] [ INFO ] [DaoH2Medicamento:91] [buscarPorCampo] Conexion establecida| H2 |  buscar por nombre Medicamento/s
+[2025-02-21 16:10:06] [ INFO ] [DaoH2Medicamento:97] [buscarPorCampo] Medicamento coincidente: Medicamento{id=2, codigo=2345, nombre='Ibuprofeno', laboratorio='Pfizer', cantidad=67, precio=0.5}
+[2025-02-21 16:10:06] [ INFO ] [DaoH2Medicamento:97] [buscarPorCampo] Medicamento coincidente: Medicamento{id=3, codigo=2345, nombre='Ibuprofeno', laboratorio='Wakanda', cantidad=153, precio=0.68}
+[2025-02-21 16:10:06] [ INFO ] [DaoH2Medicamento:97] [buscarPorCampo] Medicamento coincidente: Medicamento{id=4, codigo=2401, nombre='Ibuprofeno', laboratorio='FarmaLabs', cantidad=67, precio=0.38}
+[2025-02-21 16:25:43] [ WARN ] [MedicamentoServiceTest:26] [initDB] ---Inicio de Tests---
+[2025-02-21 16:25:43] [ INFO ] [MedicamentoServiceTest:31] [initDB] Conexion establecida| H2 |  init DB
+[2025-02-21 16:25:43] [ INFO ] [DaoH2Medicamento:29] [registrar] Conexion establecida| H2 |  registrar Medicamento
+[2025-02-21 16:25:43] [ INFO ] [DaoH2Medicamento:31] [registrar] Transaccion iniciada..
+[2025-02-21 16:25:43] [ INFO ] [DaoH2Medicamento:41] [registrar] Transaccion finalizada correctamente.., medicamento persistido en la DB
+[2025-02-21 16:25:43] [ INFO ] [DaoH2Medicamento:42] [registrar] Filas Afectadas: 1
+[2025-02-21 16:25:43] [ INFO ] [DaoH2Medicamento:44] [registrar] Obteniendo el medicamento desde la db..
+[2025-02-21 16:25:43] [ INFO ] [DaoH2Medicamento:51] [registrar] Medicamento{id=4, codigo=2401, nombre='Ibuprofeno', laboratorio='FarmaLabs', cantidad=67, precio=0.376}
+[2025-02-21 16:25:43] [ INFO ] [DaoH2Medicamento:129] [buscarPoId] Conexion establecida| H2 |  buscar por Medicamento por ID
+[2025-02-21 16:25:43] [ INFO ] [DaoH2Medicamento:133] [buscarPoId] Consulta ejecutada..
+[2025-02-21 16:25:43] [ INFO ] [DaoH2Medicamento:136] [buscarPoId] Medicamento{id=1, codigo=5872, nombre='Paracetamol', laboratorio='Bayer', cantidad=24, precio=0.23}
+[2025-02-21 16:25:43] [ INFO ] [DaoH2Medicamento:107] [buscarPorCampo] Conexion establecida| H2 |  buscar por nombre Medicamento/s
+[2025-02-21 16:25:43] [ INFO ] [DaoH2Medicamento:113] [buscarPorCampo] Medicamento coincidente: Medicamento{id=2, codigo=2345, nombre='Ibuprofeno', laboratorio='Pfizer', cantidad=67, precio=0.5}
+[2025-02-21 16:25:43] [ INFO ] [DaoH2Medicamento:113] [buscarPorCampo] Medicamento coincidente: Medicamento{id=3, codigo=2345, nombre='Ibuprofeno', laboratorio='Wakanda', cantidad=153, precio=0.68}
+[2025-02-21 16:25:43] [ INFO ] [DaoH2Medicamento:113] [buscarPorCampo] Medicamento coincidente: Medicamento{id=4, codigo=2401, nombre='Ibuprofeno', laboratorio='FarmaLabs', cantidad=67, precio=0.38}
+[2025-02-21 16:25:43] [ INFO ] [DaoH2Medicamento:86] [buscarTodos] Conexion establecida| H2 |  buscar todos los medicamentos
+[2025-02-21 16:25:43] [ INFO ] [DaoH2Medicamento:89] [buscarTodos] consulta ejecutada.. devolviendo datos..
+[2025-02-21 16:26:18] [ WARN ] [MedicamentoServiceTest:26] [initDB] ---Inicio de Tests---
+[2025-02-21 16:26:19] [ INFO ] [MedicamentoServiceTest:31] [initDB] Conexion establecida| H2 |  init DB
+[2025-02-21 16:26:19] [ INFO ] [DaoH2Medicamento:29] [registrar] Conexion establecida| H2 |  registrar Medicamento
+[2025-02-21 16:26:19] [ INFO ] [DaoH2Medicamento:31] [registrar] Transaccion iniciada..
+[2025-02-21 16:26:19] [ INFO ] [DaoH2Medicamento:41] [registrar] Transaccion finalizada correctamente.., medicamento persistido en la DB
+[2025-02-21 16:26:19] [ INFO ] [DaoH2Medicamento:42] [registrar] Filas Afectadas: 1
+[2025-02-21 16:26:19] [ INFO ] [DaoH2Medicamento:44] [registrar] Obteniendo el medicamento desde la db..
+[2025-02-21 16:26:19] [ INFO ] [DaoH2Medicamento:51] [registrar] Medicamento{id=4, codigo=2401, nombre='Ibuprofeno', laboratorio='FarmaLabs', cantidad=67, precio=0.376}
+[2025-02-21 16:26:19] [ INFO ] [DaoH2Medicamento:130] [buscarPoId] Conexion establecida| H2 |  buscar por Medicamento por ID
+[2025-02-21 16:26:19] [ INFO ] [DaoH2Medicamento:134] [buscarPoId] Consulta ejecutada..
+[2025-02-21 16:26:19] [ INFO ] [DaoH2Medicamento:137] [buscarPoId] Medicamento{id=1, codigo=5872, nombre='Paracetamol', laboratorio='Bayer', cantidad=24, precio=0.23}
+[2025-02-21 16:26:19] [ INFO ] [DaoH2Medicamento:108] [buscarPorCampo] Conexion establecida| H2 |  buscar por nombre Medicamento/s
+[2025-02-21 16:26:19] [ INFO ] [DaoH2Medicamento:114] [buscarPorCampo] Medicamento coincidente: Medicamento{id=2, codigo=2345, nombre='Ibuprofeno', laboratorio='Pfizer', cantidad=67, precio=0.5}
+[2025-02-21 16:26:19] [ INFO ] [DaoH2Medicamento:114] [buscarPorCampo] Medicamento coincidente: Medicamento{id=3, codigo=2345, nombre='Ibuprofeno', laboratorio='Wakanda', cantidad=153, precio=0.68}
+[2025-02-21 16:26:19] [ INFO ] [DaoH2Medicamento:114] [buscarPorCampo] Medicamento coincidente: Medicamento{id=4, codigo=2401, nombre='Ibuprofeno', laboratorio='FarmaLabs', cantidad=67, precio=0.38}
+[2025-02-21 16:26:19] [ INFO ] [DaoH2Medicamento:86] [buscarTodos] Conexion establecida| H2 |  buscar todos los medicamentos
+[2025-02-21 16:26:19] [ INFO ] [DaoH2Medicamento:89] [buscarTodos] consulta ejecutada.. devolviendo datos..
+[2025-02-21 16:26:19] [ INFO ] [DaoH2Medicamento:93] [buscarTodos] [Medicamento{id=1, codigo=5872, nombre='Paracetamol', laboratorio='Bayer', cantidad=24, precio=0.23}, Medicamento{id=2, codigo=2345, nombre='Ibuprofeno', laboratorio='Pfizer', cantidad=67, precio=0.5}, Medicamento{id=3, codigo=2345, nombre='Ibuprofeno', laboratorio='Wakanda', cantidad=153, precio=0.68}, Medicamento{id=4, codigo=2401, nombre='Ibuprofeno', laboratorio='FarmaLabs', cantidad=67, precio=0.38}]
+[2025-02-21 16:29:06] [ WARN ] [MedicamentoServiceTest:26] [initDB] ---Inicio de Tests---
+[2025-02-21 16:29:07] [ INFO ] [MedicamentoServiceTest:31] [initDB] Conexion establecida| H2 |  init DB
+[2025-02-21 16:29:07] [ INFO ] [DaoH2Medicamento:29] [registrar] Conexion establecida| H2 |  registrar Medicamento
+[2025-02-21 16:29:07] [ INFO ] [DaoH2Medicamento:31] [registrar] Transaccion iniciada..
+[2025-02-21 16:29:07] [ INFO ] [DaoH2Medicamento:41] [registrar] Transaccion finalizada correctamente.., medicamento persistido en la DB
+[2025-02-21 16:29:07] [ INFO ] [DaoH2Medicamento:42] [registrar] Filas Afectadas: 1
+[2025-02-21 16:29:07] [ INFO ] [DaoH2Medicamento:44] [registrar] Obteniendo el medicamento desde la db..
+[2025-02-21 16:29:07] [ INFO ] [DaoH2Medicamento:51] [registrar] Medicamento{id=4, codigo=2401, nombre='Ibuprofeno', laboratorio='FarmaLabs', cantidad=67, precio=0.376}
+[2025-02-21 16:29:07] [ INFO ] [DaoH2Medicamento:130] [buscarPoId] Conexion establecida| H2 |  buscar por Medicamento por ID
+[2025-02-21 16:29:07] [ INFO ] [DaoH2Medicamento:134] [buscarPoId] Consulta ejecutada..
+[2025-02-21 16:29:07] [ INFO ] [DaoH2Medicamento:137] [buscarPoId] Medicamento{id=1, codigo=5872, nombre='Paracetamol', laboratorio='Bayer', cantidad=24, precio=0.23}
+[2025-02-21 16:29:07] [ INFO ] [DaoH2Medicamento:108] [buscarPorCampo] Conexion establecida| H2 |  buscar por nombre Medicamento/s
+[2025-02-21 16:29:07] [ INFO ] [DaoH2Medicamento:114] [buscarPorCampo] Medicamento coincidente: Medicamento{id=2, codigo=2345, nombre='Ibuprofeno', laboratorio='Pfizer', cantidad=67, precio=0.5}
+[2025-02-21 16:29:07] [ INFO ] [DaoH2Medicamento:114] [buscarPorCampo] Medicamento coincidente: Medicamento{id=3, codigo=2347, nombre='Ibuprofeno', laboratorio='Wakanda', cantidad=153, precio=0.68}
+[2025-02-21 16:29:07] [ INFO ] [DaoH2Medicamento:114] [buscarPorCampo] Medicamento coincidente: Medicamento{id=4, codigo=2401, nombre='Ibuprofeno', laboratorio='FarmaLabs', cantidad=67, precio=0.38}
+[2025-02-21 16:29:07] [ INFO ] [DaoH2Medicamento:86] [buscarTodos] Conexion establecida| H2 |  buscar todos los medicamentos
+[2025-02-21 16:29:07] [ INFO ] [DaoH2Medicamento:89] [buscarTodos] consulta ejecutada.. devolviendo datos..
+[2025-02-21 16:29:07] [ INFO ] [DaoH2Medicamento:93] [buscarTodos] [Medicamento{id=1, codigo=5872, nombre='Paracetamol', laboratorio='Bayer', cantidad=24, precio=0.23}, Medicamento{id=2, codigo=2345, nombre='Ibuprofeno', laboratorio='Pfizer', cantidad=67, precio=0.5}, Medicamento{id=3, codigo=2347, nombre='Ibuprofeno', laboratorio='Wakanda', cantidad=153, precio=0.68}, Medicamento{id=4, codigo=2401, nombre='Ibuprofeno', laboratorio='FarmaLabs', cantidad=67, precio=0.38}]
