@@ -1,0 +1,162 @@
+[2025-02-22 11:41:37] [ WARN ] [PacienteServiceTest:26] ---Inicio de Tests---
+[2025-02-22 11:41:37] [ ERROR] [PacienteServiceTest:33] Error de Sintaxis en sentencia SQL "\000d\000a\000d\000aCREATE TABLE pacientes(\000d\000a    id int PRIMARY KEY AUTO_INCREMENT,\000d\000a    apellido varchar(25) NOT NULL,\000d\000a    nombre varchar(25) NOT NULL,\000d\000a    dni varchar(15) NOT NULL,\000d\000a    fecha_ingreso DATE NOT NULL,\000d\000a    id_domicilio int NOT NULL,\000d\000a[*])"; se esperaba "identifier"
+Syntax error in SQL statement "\000d\000a\000d\000aCREATE TABLE pacientes(\000d\000a    id int PRIMARY KEY AUTO_INCREMENT,\000d\000a    apellido varchar(25) NOT NULL,\000d\000a    nombre varchar(25) NOT NULL,\000d\000a    dni varchar(15) NOT NULL,\000d\000a    fecha_ingreso DATE NOT NULL,\000d\000a    id_domicilio int NOT NULL,\000d\000a[*])"; expected "identifier"; SQL statement:
+
+
+CREATE TABLE pacientes(
+    id int PRIMARY KEY AUTO_INCREMENT,
+    apellido varchar(25) NOT NULL,
+    nombre varchar(25) NOT NULL,
+    dni varchar(15) NOT NULL,
+    fecha_ingreso DATE NOT NULL,
+    id_domicilio int NOT NULL,
+) [42001-230]
+[2025-02-22 11:42:42] [ WARN ] [PacienteServiceTest:26] ---Inicio de Tests---
+[2025-02-22 11:42:42] [ INFO ] [PacienteServiceTest:31] Conexion establecida| H2 |  init DB
+[2025-02-22 11:42:42] [ INFO ] [DomicilioDaoH2:20] Conexion establecida| H2 |  guardar Domicilio
+[2025-02-22 11:42:42] [ INFO ] [DomicilioDaoH2:22] Transaccion iniciada..
+[2025-02-22 11:42:42] [ INFO ] [DomicilioDaoH2:31] Transaccion finalizada correctamente.., DOMICILIO persistido en la DB
+[2025-02-22 11:42:42] [ INFO ] [DomicilioDaoH2:32] Filas Afectadas: 1
+[2025-02-22 11:42:42] [ INFO ] [DomicilioDaoH2:34] Obteniendo el DOMICILIO desde la db..
+[2025-02-22 11:42:42] [ INFO ] [DomicilioDaoH2:41] Domicilio guardado: Domicilio{id=4, calle='Av. desconocida', numero=31, localidad='Kennedy', provincia='Guayas'}
+[2025-02-22 11:42:42] [ INFO ] [PacienteDaoH2:25] Conexion establecida| H2 |  Guardar paciente
+[2025-02-22 11:42:42] [ INFO ] [PacienteDaoH2:27] Transaccion iniciada..
+[2025-02-22 11:42:42] [ INFO ] [PacienteDaoH2:37] Transaccion finalizada correctamente.., PACIENTE persistido en la DB
+[2025-02-22 11:42:42] [ INFO ] [PacienteDaoH2:38] Filas Afectadas: 1
+[2025-02-22 11:42:42] [ INFO ] [PacienteDaoH2:40] Obteniendo el PACIENTE desde la db..
+[2025-02-22 11:42:42] [ INFO ] [PacienteDaoH2:47] Domicilio guardado: Paciente{id=4, apellido='Valdiviezo', nombre='Janet', dni='0912345678', fechaIngreso=2024-12-31, domicilio=Domicilio{id=4, calle='Av. desconocida', numero=31, localidad='Kennedy', provincia='Guayas'}}
+[2025-02-22 12:28:11] [ WARN ] [PacienteServiceTest:26] ---Inicio de Tests---
+[2025-02-22 12:28:11] [ INFO ] [PacienteServiceTest:31] Conexion establecida| H2 |  init DB
+[2025-02-22 12:28:11] [ INFO ] [DomicilioDaoH2:22] Conexion establecida| H2 |  guardar Domicilio
+[2025-02-22 12:28:11] [ INFO ] [DomicilioDaoH2:24] Transaccion iniciada..
+[2025-02-22 12:28:11] [ INFO ] [DomicilioDaoH2:33] Transaccion finalizada correctamente.., DOMICILIO persistido en la DB
+[2025-02-22 12:28:11] [ INFO ] [DomicilioDaoH2:34] Filas Afectadas: 1
+[2025-02-22 12:28:11] [ INFO ] [DomicilioDaoH2:36] Obteniendo el DOMICILIO desde la db..
+[2025-02-22 12:28:11] [ INFO ] [DomicilioDaoH2:43] Domicilio guardado: Domicilio{id=4, calle='Av. desconocida', numero=31, localidad='Kennedy', provincia='Guayas'}
+[2025-02-22 12:28:11] [ INFO ] [PacienteDaoH2:25] Conexion establecida| H2 |  Guardar paciente
+[2025-02-22 12:28:11] [ INFO ] [PacienteDaoH2:27] Transaccion iniciada..
+[2025-02-22 12:28:11] [ INFO ] [PacienteDaoH2:37] Transaccion finalizada correctamente.., PACIENTE persistido en la DB
+[2025-02-22 12:28:11] [ INFO ] [PacienteDaoH2:38] Filas Afectadas: 1
+[2025-02-22 12:28:11] [ INFO ] [PacienteDaoH2:40] Obteniendo el PACIENTE desde la db..
+[2025-02-22 12:28:11] [ INFO ] [PacienteDaoH2:47] Domicilio guardado: Paciente{id=4, apellido='Valdiviezo', nombre='Janet', dni='0912345678', fechaIngreso=2024-12-31, domicilio=Domicilio{id=4, calle='Av. desconocida', numero=31, localidad='Kennedy', provincia='Guayas'}}
+[2025-02-22 12:28:11] [ INFO ] [PacienteDaoH2:87] Conexion establecida| H2 |  buscar Paciente por ID
+[2025-02-22 12:28:11] [ INFO ] [PacienteDaoH2:91] Consulta ejecutada..
+[2025-02-22 12:28:11] [ INFO ] [DomicilioDaoH2:84] Conexion establecida| H2 |  buscar por Domicilio por ID
+[2025-02-22 12:28:11] [ ERROR] [DomicilioDaoH2:95] Tabla "DOMICILIO" no encontrada
+Table "DOMICILIO" not found; SQL statement:
+SELECT * FROM domicilio WHERE id = ?; [42102-230]
+[2025-02-22 12:28:11] [ INFO ] [PacienteDaoH2:94] Paciente Encontrado Paciente{id=4, apellido='Valdiviezo', nombre='Janet', dni='0912345678', fechaIngreso=2024-12-31, domicilio=null}
+[2025-02-22 12:29:34] [ WARN ] [PacienteServiceTest:26] ---Inicio de Tests---
+[2025-02-22 12:29:35] [ INFO ] [PacienteServiceTest:31] Conexion establecida| H2 |  init DB
+[2025-02-22 12:29:35] [ INFO ] [DomicilioDaoH2:22] Conexion establecida| H2 |  guardar Domicilio
+[2025-02-22 12:29:35] [ INFO ] [DomicilioDaoH2:24] Transaccion iniciada..
+[2025-02-22 12:29:35] [ INFO ] [DomicilioDaoH2:33] Transaccion finalizada correctamente.., DOMICILIO persistido en la DB
+[2025-02-22 12:29:35] [ INFO ] [DomicilioDaoH2:34] Filas Afectadas: 1
+[2025-02-22 12:29:35] [ INFO ] [DomicilioDaoH2:36] Obteniendo el DOMICILIO desde la db..
+[2025-02-22 12:29:35] [ INFO ] [DomicilioDaoH2:43] Domicilio guardado: Domicilio{id=4, calle='Av. desconocida', numero=31, localidad='Kennedy', provincia='Guayas'}
+[2025-02-22 12:29:35] [ INFO ] [PacienteDaoH2:25] Conexion establecida| H2 |  Guardar paciente
+[2025-02-22 12:29:35] [ INFO ] [PacienteDaoH2:27] Transaccion iniciada..
+[2025-02-22 12:29:35] [ INFO ] [PacienteDaoH2:37] Transaccion finalizada correctamente.., PACIENTE persistido en la DB
+[2025-02-22 12:29:35] [ INFO ] [PacienteDaoH2:38] Filas Afectadas: 1
+[2025-02-22 12:29:35] [ INFO ] [PacienteDaoH2:40] Obteniendo el PACIENTE desde la db..
+[2025-02-22 12:29:35] [ INFO ] [PacienteDaoH2:47] Domicilio guardado: Paciente{id=4, apellido='Valdiviezo', nombre='Janet', dni='0912345678', fechaIngreso=2024-12-31, domicilio=Domicilio{id=4, calle='Av. desconocida', numero=31, localidad='Kennedy', provincia='Guayas'}}
+[2025-02-22 12:29:35] [ INFO ] [PacienteDaoH2:87] Conexion establecida| H2 |  buscar Paciente por ID
+[2025-02-22 12:29:35] [ INFO ] [PacienteDaoH2:91] Consulta ejecutada..
+[2025-02-22 12:29:35] [ INFO ] [DomicilioDaoH2:84] Conexion establecida| H2 |  buscar por Domicilio por ID
+[2025-02-22 12:29:35] [ INFO ] [DomicilioDaoH2:88] Consulta ejecutada..
+[2025-02-22 12:29:35] [ INFO ] [DomicilioDaoH2:91] Domicilio{id=4, calle='Av. desconocida', numero=31, localidad='Kennedy', provincia='Guayas'}
+[2025-02-22 12:29:35] [ INFO ] [PacienteDaoH2:94] Paciente Encontrado Paciente{id=4, apellido='Valdiviezo', nombre='Janet', dni='0912345678', fechaIngreso=2024-12-31, domicilio=Domicilio{id=4, calle='Av. desconocida', numero=31, localidad='Kennedy', provincia='Guayas'}}
+[2025-02-22 17:46:15] [ WARN ] [PacienteServiceTest:26] ---Inicio de Tests---
+[2025-02-22 17:46:16] [ INFO ] [PacienteServiceTest:31] Conexion establecida| H2 |  init DB
+[2025-02-22 17:46:16] [ INFO ] [PacienteDaoH2:138] Conexion establecida| H2 |  buscar Paciente por ID
+[2025-02-22 17:46:16] [ INFO ] [PacienteDaoH2:142] Consulta ejecutada..
+[2025-02-22 17:46:16] [ INFO ] [DomicilioDaoH2:137] Conexion establecida| H2 |  buscar por Domicilio por ID
+[2025-02-22 17:46:16] [ INFO ] [DomicilioDaoH2:141] Consulta ejecutada..
+[2025-02-22 17:46:16] [ INFO ] [DomicilioDaoH2:144] Domicilio encontrado: Domicilio{id=1, calle='Av.americas', numero=23, localidad='Garzota', provincia='Guayas'}
+[2025-02-22 17:46:16] [ INFO ] [PacienteDaoH2:145] Paciente Encontrado Paciente{id=1, apellido='Sauhing', nombre='Axel', dni='0956783212', fechaIngreso=2025-02-20, domicilio=Domicilio{id=1, calle='Av.americas', numero=23, localidad='Garzota', provincia='Guayas'}}
+[2025-02-22 17:46:16] [ INFO ] [DomicilioDaoH2:91] Conexion establecida| H2 |  Borrar Domicilio
+[2025-02-22 17:46:16] [ INFO ] [DomicilioDaoH2:93] Transaccion iniciada..
+[2025-02-22 17:46:16] [ ERROR] [DomicilioDaoH2:105] Error en la transaccion
+[2025-02-22 17:46:16] [ ERROR] [DomicilioDaoH2:106] Cannot invoke "model.Domicilio.getId()" because "domicilio" is null
+[2025-02-22 18:01:26] [ WARN ] [PacienteServiceTest:26] ---Inicio de Tests---
+[2025-02-22 18:01:27] [ INFO ] [PacienteServiceTest:31] Conexion establecida| H2 |  init DB
+[2025-02-22 18:01:27] [ INFO ] [PacienteDaoH2:138] Conexion establecida| H2 |  buscar Paciente por ID
+[2025-02-22 18:01:27] [ INFO ] [PacienteDaoH2:142] Consulta ejecutada..
+[2025-02-22 18:01:27] [ INFO ] [DomicilioDaoH2:137] Conexion establecida| H2 |  buscar por Domicilio por ID
+[2025-02-22 18:01:27] [ INFO ] [DomicilioDaoH2:141] Consulta ejecutada..
+[2025-02-22 18:01:27] [ INFO ] [DomicilioDaoH2:144] Domicilio encontrado: Domicilio{id=1, calle='Av.americas', numero=23, localidad='Garzota', provincia='Guayas'}
+[2025-02-22 18:01:27] [ INFO ] [PacienteDaoH2:145] Paciente Encontrado Paciente{id=1, apellido='Sauhing', nombre='Axel', dni='0956783212', fechaIngreso=2025-02-20, domicilio=Domicilio{id=1, calle='Av.americas', numero=23, localidad='Garzota', provincia='Guayas'}}
+[2025-02-22 18:01:27] [ INFO ] [DomicilioDaoH2:91] Conexion establecida| H2 |  Borrar Domicilio
+[2025-02-22 18:01:27] [ INFO ] [DomicilioDaoH2:93] Transaccion iniciada..
+[2025-02-22 18:01:27] [ INFO ] [DomicilioDaoH2:137] Conexion establecida| H2 |  buscar por Domicilio por ID
+[2025-02-22 18:01:27] [ INFO ] [DomicilioDaoH2:141] Consulta ejecutada..
+[2025-02-22 18:01:27] [ INFO ] [DomicilioDaoH2:144] Domicilio encontrado: Domicilio{id=1, calle='Av.americas', numero=23, localidad='Garzota', provincia='Guayas'}
+[2025-02-22 18:01:27] [ INFO ] [DomicilioDaoH2:100] Primera parte de la transaccion Completada.., DOMICILIO borrado en la DB
+[2025-02-22 18:01:27] [ INFO ] [DomicilioDaoH2:101] Filas Afectadas: 1
+[2025-02-22 18:01:27] [ INFO ] [DomicilioDaoH2:103] Domicilio borrado: Domicilio{id=1, calle='Av.americas', numero=23, localidad='Garzota', provincia='Guayas'}
+[2025-02-22 18:01:27] [ INFO ] [PacienteDaoH2:88] Conexion establecida| H2 |  Borrar paciente
+[2025-02-22 18:01:27] [ INFO ] [PacienteDaoH2:90] Transaccion iniciada..
+[2025-02-22 18:01:27] [ INFO ] [PacienteDaoH2:96] Transaccion finalizada correctamente.., PACIENTE ELIMINADO en la DB
+[2025-02-22 18:01:27] [ INFO ] [PacienteDaoH2:97] Filas Afectadas: 1
+[2025-02-22 18:01:27] [ INFO ] [PacienteDaoH2:100] Paciente Eliminado: Paciente{id=1, apellido='Sauhing', nombre='Axel', dni='0956783212', fechaIngreso=2025-02-20, domicilio=Domicilio{id=1, calle='Av.americas', numero=23, localidad='Garzota', provincia='Guayas'}}
+[2025-02-22 18:06:19] [ WARN ] [PacienteServiceTest:26] ---Inicio de Tests---
+[2025-02-22 18:06:19] [ INFO ] [PacienteServiceTest:31] Conexion establecida| H2 |  init DB
+[2025-02-22 18:06:19] [ INFO ] [PacienteDaoH2:139] Conexion establecida| H2 |  buscar Paciente por ID
+[2025-02-22 18:06:19] [ INFO ] [PacienteDaoH2:143] Consulta ejecutada..
+[2025-02-22 18:06:19] [ INFO ] [DomicilioDaoH2:137] Conexion establecida| H2 |  buscar por Domicilio por ID
+[2025-02-22 18:06:19] [ INFO ] [DomicilioDaoH2:141] Consulta ejecutada..
+[2025-02-22 18:06:19] [ INFO ] [DomicilioDaoH2:144] Domicilio encontrado: Domicilio{id=1, calle='Av.americas', numero=23, localidad='Garzota', provincia='Guayas'}
+[2025-02-22 18:06:19] [ INFO ] [PacienteDaoH2:146] Paciente Encontrado Paciente{id=1, apellido='Sauhing', nombre='Axel', dni='0956783212', fechaIngreso=2025-02-20, domicilio=Domicilio{id=1, calle='Av.americas', numero=23, localidad='Garzota', provincia='Guayas'}}
+[2025-02-22 18:06:19] [ INFO ] [DomicilioDaoH2:91] Conexion establecida| H2 |  Borrar Domicilio
+[2025-02-22 18:06:19] [ INFO ] [DomicilioDaoH2:93] Transaccion iniciada..
+[2025-02-22 18:06:19] [ INFO ] [DomicilioDaoH2:137] Conexion establecida| H2 |  buscar por Domicilio por ID
+[2025-02-22 18:06:19] [ INFO ] [DomicilioDaoH2:141] Consulta ejecutada..
+[2025-02-22 18:06:19] [ INFO ] [DomicilioDaoH2:144] Domicilio encontrado: Domicilio{id=1, calle='Av.americas', numero=23, localidad='Garzota', provincia='Guayas'}
+[2025-02-22 18:06:19] [ INFO ] [DomicilioDaoH2:100] Primera parte de la transaccion Completada.., DOMICILIO borrado en la DB
+[2025-02-22 18:06:19] [ INFO ] [DomicilioDaoH2:101] Filas Afectadas: 1
+[2025-02-22 18:06:19] [ INFO ] [DomicilioDaoH2:103] Domicilio borrado: Domicilio{id=1, calle='Av.americas', numero=23, localidad='Garzota', provincia='Guayas'}
+[2025-02-22 18:06:19] [ INFO ] [PacienteDaoH2:88] Conexion establecida| H2 |  Borrar paciente
+[2025-02-22 18:06:19] [ INFO ] [PacienteDaoH2:90] Transaccion iniciada..
+[2025-02-22 18:06:19] [ ERROR] [PacienteDaoH2:103] Error en la transaccion
+[2025-02-22 18:06:19] [ ERROR] [PacienteDaoH2:104] / by zero
+[2025-02-22 18:06:19] [ INFO ] [DomicilioDaoH2:23] Conexion establecida| H2 |  guardar Domicilio
+[2025-02-22 18:06:19] [ INFO ] [DomicilioDaoH2:25] Transaccion iniciada..
+[2025-02-22 18:06:19] [ INFO ] [DomicilioDaoH2:39] Transaccion finalizada correctamente.., DOMICILIO persistido en la DB
+[2025-02-22 18:06:19] [ INFO ] [DomicilioDaoH2:40] Filas Afectadas: 1
+[2025-02-22 18:06:19] [ INFO ] [DomicilioDaoH2:42] Obteniendo el DOMICILIO desde la db..
+[2025-02-22 18:06:19] [ INFO ] [DomicilioDaoH2:53] Domicilio guardado: Domicilio{id=1, calle='Av.americas', numero=23, localidad='Garzota', provincia='Guayas'}
+[2025-02-22 18:08:35] [ WARN ] [PacienteServiceTest:26] ---Inicio de Tests---
+[2025-02-22 18:08:35] [ INFO ] [PacienteServiceTest:31] Conexion establecida| H2 |  init DB
+[2025-02-22 18:08:35] [ INFO ] [PacienteDaoH2:139] Conexion establecida| H2 |  buscar Paciente por ID
+[2025-02-22 18:08:35] [ INFO ] [PacienteDaoH2:143] Consulta ejecutada..
+[2025-02-22 18:08:35] [ INFO ] [DomicilioDaoH2:138] Conexion establecida| H2 |  buscar por Domicilio por ID
+[2025-02-22 18:08:35] [ INFO ] [DomicilioDaoH2:142] Consulta ejecutada..
+[2025-02-22 18:08:35] [ INFO ] [DomicilioDaoH2:145] Domicilio encontrado: Domicilio{id=1, calle='Av.americas', numero=23, localidad='Garzota', provincia='Guayas'}
+[2025-02-22 18:08:35] [ INFO ] [PacienteDaoH2:146] Paciente Encontrado Paciente{id=1, apellido='Sauhing', nombre='Axel', dni='0956783212', fechaIngreso=2025-02-20, domicilio=Domicilio{id=1, calle='Av.americas', numero=23, localidad='Garzota', provincia='Guayas'}}
+[2025-02-22 18:08:35] [ INFO ] [DomicilioDaoH2:91] Conexion establecida| H2 |  Borrar Domicilio
+[2025-02-22 18:08:35] [ INFO ] [DomicilioDaoH2:93] Transaccion iniciada..
+[2025-02-22 18:08:35] [ INFO ] [DomicilioDaoH2:138] Conexion establecida| H2 |  buscar por Domicilio por ID
+[2025-02-22 18:08:35] [ INFO ] [DomicilioDaoH2:142] Consulta ejecutada..
+[2025-02-22 18:08:35] [ INFO ] [DomicilioDaoH2:145] Domicilio encontrado: Domicilio{id=1, calle='Av.americas', numero=23, localidad='Garzota', provincia='Guayas'}
+[2025-02-22 18:08:35] [ ERROR] [DomicilioDaoH2:106] Error en la transaccion
+[2025-02-22 18:08:35] [ ERROR] [DomicilioDaoH2:107] / by zero
+[2025-02-22 18:08:35] [ INFO ] [PacienteDaoH2:88] Conexion establecida| H2 |  Borrar paciente
+[2025-02-22 18:08:35] [ INFO ] [PacienteDaoH2:90] Transaccion iniciada..
+[2025-02-22 18:08:35] [ INFO ] [PacienteDaoH2:97] Transaccion finalizada correctamente.., PACIENTE ELIMINADO en la DB
+[2025-02-22 18:08:35] [ INFO ] [PacienteDaoH2:98] Filas Afectadas: 1
+[2025-02-22 18:08:35] [ INFO ] [PacienteDaoH2:101] Paciente Eliminado: Paciente{id=1, apellido='Sauhing', nombre='Axel', dni='0956783212', fechaIngreso=2025-02-20, domicilio=Domicilio{id=1, calle='Av.americas', numero=23, localidad='Garzota', provincia='Guayas'}}
+[2025-02-22 18:11:22] [ WARN ] [PacienteServiceTest:26] ---Inicio de Tests---
+[2025-02-22 18:11:22] [ INFO ] [PacienteServiceTest:31] Conexion establecida| H2 |  init DB
+[2025-02-22 18:11:22] [ INFO ] [PacienteDaoH2:139] Conexion establecida| H2 |  buscar Paciente por ID
+[2025-02-22 18:11:22] [ INFO ] [PacienteDaoH2:143] Consulta ejecutada..
+[2025-02-22 18:11:22] [ INFO ] [DomicilioDaoH2:139] Conexion establecida| H2 |  buscar por Domicilio por ID
+[2025-02-22 18:11:22] [ INFO ] [DomicilioDaoH2:143] Consulta ejecutada..
+[2025-02-22 18:11:22] [ INFO ] [DomicilioDaoH2:146] Domicilio encontrado: Domicilio{id=1, calle='Av.americas', numero=23, localidad='Garzota', provincia='Guayas'}
+[2025-02-22 18:11:22] [ INFO ] [PacienteDaoH2:146] Paciente Encontrado Paciente{id=1, apellido='Sauhing', nombre='Axel', dni='0956783212', fechaIngreso=2025-02-20, domicilio=Domicilio{id=1, calle='Av.americas', numero=23, localidad='Garzota', provincia='Guayas'}}
+[2025-02-22 18:11:22] [ INFO ] [DomicilioDaoH2:91] Conexion establecida| H2 |  Borrar Domicilio
+[2025-02-22 18:11:22] [ INFO ] [DomicilioDaoH2:93] Transaccion iniciada..
+[2025-02-22 18:11:22] [ INFO ] [DomicilioDaoH2:139] Conexion establecida| H2 |  buscar por Domicilio por ID
+[2025-02-22 18:11:22] [ INFO ] [DomicilioDaoH2:143] Consulta ejecutada..
+[2025-02-22 18:11:22] [ INFO ] [DomicilioDaoH2:146] Domicilio encontrado: Domicilio{id=1, calle='Av.americas', numero=23, localidad='Garzota', provincia='Guayas'}
+[2025-02-22 18:11:22] [ ERROR] [DomicilioDaoH2:106] Error en la transaccion
+[2025-02-22 18:11:22] [ ERROR] [DomicilioDaoH2:107] / by zero
