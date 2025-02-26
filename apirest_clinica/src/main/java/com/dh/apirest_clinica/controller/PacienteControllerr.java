@@ -1,13 +1,14 @@
 package com.dh.apirest_clinica.controller;
 
 
-import com.dh.apirest_clinica.model.Paciente;
-import com.dh.apirest_clinica.service.PacienteService;
+import com.dh.apirest_clinica.entity.Paciente;
+import com.dh.apirest_clinica.service.impl.PacienteService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/paciente")  //ponemos la ruta desde donde surgira el endpoint(y damos orden en caso de tener mas controladores)
@@ -30,9 +31,9 @@ public class PacienteControllerr {
 
     @GetMapping("/buscar/{id}")
     public ResponseEntity<?> buscarPorId(@PathVariable Integer id){  //se le pone option pq existen diferentes tipos de retorno
-        Paciente paciente =  pacienteService.buscarPorID(id);
-        if(paciente != null){
-          return ResponseEntity.ok(paciente); //se arma implicitamente(no necesario el .build())
+        Optional<Paciente> paciente =  pacienteService.buscarPorID(id);
+        if(paciente.isPresent()){
+          return ResponseEntity.ok(paciente.get()); //no olvidar el .get
         }else{
            // String jsonResponse = "{\"mensaje\" : \"El paciente fue modificado\"}";   //!ojo
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Paciente no encontrado");
@@ -45,7 +46,7 @@ public class PacienteControllerr {
 
 
     @GetMapping("/buscarTodos")
-    public ResponseEntity<ArrayList<Paciente>> buscarTodos(){
+    public ResponseEntity<List<Paciente>> buscarTodos(){
         return ResponseEntity.ok(pacienteService.buscarTodos());
     }
 
@@ -53,22 +54,22 @@ public class PacienteControllerr {
     @PutMapping("/modificar")
     public ResponseEntity<?> modificarPaciente(@RequestBody Paciente paciente){
         //buscamos al paciente primero para saber si existe
-        Paciente pacienteInvolucrado = pacienteService.buscarPorID(paciente.getId());
-        if(pacienteInvolucrado != null){
+        Optional<Paciente> pacienteInvolucrado = pacienteService.buscarPorID(paciente.getId());
+        if(pacienteInvolucrado.isPresent()){
             pacienteService.modificar(paciente);
             String jsonResponse = "{\"mensaje\" : \"El paciente fue modificado\"}";
             return ResponseEntity.ok(jsonResponse);
         }else {
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).build(); //se debe tranformar a json , to do lo que se devuelva debe pasar como json
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
         }
     }
 
     @DeleteMapping("/eliminar/{id}")
     public ResponseEntity<?> eliminarPaciente(@PathVariable Integer id){
-        Paciente pacienteInvolucrado = pacienteService.buscarPorID(id);
-        if(pacienteInvolucrado != null){
+        Optional<Paciente> pacienteInvolucrado = pacienteService.buscarPorID(id);
+        if(pacienteInvolucrado.isPresent()){
             pacienteService.borrarPorId(id);
-            String jsonResponse = "{\"mensaje\" : \"El paciente eliminado\"}";
+            String jsonResponse = "{\"mensaje\" : \"El paciente fue eliminado\"}";
             return ResponseEntity.ok(jsonResponse);
         }else {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).build();

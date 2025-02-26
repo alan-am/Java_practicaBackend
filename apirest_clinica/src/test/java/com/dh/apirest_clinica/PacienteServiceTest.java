@@ -2,9 +2,9 @@ package com.dh.apirest_clinica;
 
 import com.dh.apirest_clinica.dao.impl.PacienteDaoH2;
 import com.dh.apirest_clinica.db.H2Connection;
-import com.dh.apirest_clinica.model.Domicilio;
-import com.dh.apirest_clinica.model.Paciente;
-import com.dh.apirest_clinica.service.PacienteService;
+import com.dh.apirest_clinica.entity.Domicilio;
+import com.dh.apirest_clinica.entity.Paciente;
+import com.dh.apirest_clinica.service.impl.PacienteService;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

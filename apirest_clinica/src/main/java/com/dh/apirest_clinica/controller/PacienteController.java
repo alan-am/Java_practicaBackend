@@ -1,8 +1,8 @@
 package com.dh.apirest_clinica.controller;
 
 
-import com.dh.apirest_clinica.model.Paciente;
-import com.dh.apirest_clinica.service.PacienteService;
+import com.dh.apirest_clinica.entity.Paciente;
+import com.dh.apirest_clinica.service.impl.PacienteService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -26,7 +26,7 @@ public class PacienteController {
 
     @GetMapping("/index")
     public String mostrarPacientePorId(Model model, @RequestParam Integer id){ //como me llega este id? por medio de una solicitud pero primero defino en cual de las 2 formas lo recibo
-        Paciente paciente =  pacienteService.buscarPorID(id); //ya el paciente encontrado se lo debemos pasar a la vista
+        Paciente paciente =  pacienteService.buscarPorID(id).get(); //ya el paciente encontrado se lo debemos pasar a la vista
         model.addAttribute("nombrePaciente", paciente.getNombre()); //recibe -> el nombre de la variable definida en la vista Y que valor va llevar.
         model.addAttribute("apellidoPaciente", paciente.getApellido());
         return "paciente"; //aqui se retorna el nombre de la vista
@@ -34,7 +34,7 @@ public class PacienteController {
 
     @GetMapping("/index2/{id}") // le debo especificar como se va recibir el parametro
     public String mostrarPacientePorId2(Model model, @PathVariable Integer id){
-        Paciente paciente =  pacienteService.buscarPorID(id);
+        Paciente paciente =  pacienteService.buscarPorID(id).get();
         model.addAttribute("nombrePaciente", paciente.getNombre());
         model.addAttribute("apellidoPaciente", paciente.getApellido());
         return "paciente";

@@ -1,15 +1,12 @@
 package com.dh.apirest_clinica.controller;
 
 
-import com.dh.apirest_clinica.model.Turno;
-import com.dh.apirest_clinica.service.OdontologoService;
-import com.dh.apirest_clinica.service.PacienteService;
-import com.dh.apirest_clinica.service.TurnoService;
+import com.dh.apirest_clinica.entity.Turno;
+import com.dh.apirest_clinica.service.impl.TurnoService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.ArrayList;
+import java.util.List;
 
 @RestController
 @RequestMapping("/turnos")
@@ -31,7 +28,7 @@ public class TurnoController {
     }
 
     @GetMapping("/buscarTodos")
-    public ResponseEntity<ArrayList<Turno>> buscarTodos(){
+    public ResponseEntity<List<Turno>> buscarTodos(){
         return ResponseEntity.ok(turnoService.buscarTodos());
     }
 }
