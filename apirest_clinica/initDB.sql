@@ -1,5 +1,6 @@
 DROP TABLE pacientes IF EXISTS;
 DROP TABLE domicilios IF EXISTS;
+DROP TABLE odontologos IF EXISTS;
 
 CREATE TABLE domicilios(
     id int PRIMARY KEY AUTO_INCREMENT,
@@ -18,6 +19,15 @@ CREATE TABLE pacientes(
     id_domicilio int NOT NULL
 );
 
+CREATE TABLE odontologos(
+    id int PRIMARY KEY AUTO_INCREMENT,
+    matricula varchar(10) NOT NULL,
+    apellido varchar(25) NOT NULL,
+    nombre varchar(25) NOT NULL
+);
+
+
+
 INSERT INTO domicilios VALUES
 (DEFAULT, 'Av.americas', 23, 'Garzota', 'Guayas'),
 (DEFAULT, 'via a la costa', 34, 'Tarqui', 'Guayas'),
@@ -27,4 +37,6 @@ INSERT INTO pacientes VALUES
 (DEFAULT, 'Sauhing', 'Axel', '0956783212', '2025-02-20', 1),
 (DEFAULT, 'Rivera', 'Alejandro', '0916582211', '2025-02-17', 2),
 (DEFAULT, 'Aguilar', 'Alan', '0998233318', '2025-02-21', 3);
+
+INSERT INTO odontologos VALUES (DEFAULT, 456,'Carlos','panico'), (DEFAULT, 789,'luciana','muelas');
 

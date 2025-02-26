@@ -15,7 +15,7 @@ public class DomicilioDaoH2 implements IDao<Domicilio> {
     private static final String SELECT_ID = "SELECT * FROM domicilios WHERE id = ?;";
     private static final String DELETE = "DELETE FROM domicilios WHERE id = ?;";
 
-    private  static final String UPDATE = "UPDATE pacientes SET calle = ?, numero =?, localidad = ?, provincia = ? WHERE id = ?;";
+    private  static final String UPDATE = "UPDATE domicilios SET calle = ?, numero =?, localidad = ?, provincia = ? WHERE id = ?;";
     @Override
     public Domicilio guardar(Domicilio domicilio) {
         Connection con = null;

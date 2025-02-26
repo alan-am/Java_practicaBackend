@@ -181,6 +181,7 @@ public class PacienteDaoH2 implements IDao<Paciente> {
     @Override
     public void modificar(Paciente paciente){
         Connection con = null;
+        domicilioDaoH2.modificar(paciente.getDomicilio());
         try{
             con = H2Connection.getConnection();
             log.info("Conexion establecida| H2 |  Modificar Paciente");
