@@ -11,11 +11,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller  //indica que se trabajara con una vista interna  a diferencia de @RestController que indica lo contrario
 //ademas,  Esta anotacion permite que Spring maneje por cuenta propia las instanciacion de este controlador
-public class PacienteController {
+public class VistaController {
 
     PacienteService pacienteService;
 
-    public PacienteController(PacienteService pacienteService) {
+    public VistaController(PacienteService pacienteService) {
         this.pacienteService = pacienteService;
     }
 

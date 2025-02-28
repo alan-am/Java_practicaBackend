@@ -14,6 +14,9 @@ public class OdontologoService implements IOdontologoService {
     private IOdontologoRepository iOdontologoRepository;
     private static final Logger log = LoggerFactory.getLogger(OdontologoService.class);
 
+    public OdontologoService(IOdontologoRepository iOdontologoRepository) {
+        this.iOdontologoRepository = iOdontologoRepository;
+    }
 
     @Override
     public Optional<Odontologo> buscarPorId(Integer id) {
