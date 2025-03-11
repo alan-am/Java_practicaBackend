@@ -1,6 +1,7 @@
 package com.dh.apirest_clinica.service.impl;
 
 import com.dh.apirest_clinica.entity.Paciente;
+import com.dh.apirest_clinica.exception.ResourceNotFoundException;
 import com.dh.apirest_clinica.repository.IPacienteRepository;
 import com.dh.apirest_clinica.service.IPacienteService;
 import org.slf4j.Logger;
@@ -31,6 +32,10 @@ public class PacienteService implements IPacienteService {
 
     @Override
     public void borrarPorId(Integer id) {
+        Optional<Paciente> pacienteEncontrado = iPacienteRepository.findById(id);
+        if(pacienteEncontrado.isEmpty()){
+            throw new ResourceNotFoundException("El paciente a eliminar no ha sido encontrado "+ id); //Siempre observar que en el controlador no se aplica esta misma logica.
+        }
         iPacienteRepository.deleteById(id);
     }
 

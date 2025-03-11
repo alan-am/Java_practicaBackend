@@ -66,14 +66,9 @@ public class PacienteControllerr {
 
     @DeleteMapping("/eliminar/{id}")
     public ResponseEntity<?> eliminarPaciente(@PathVariable Integer id){
-        Optional<Paciente> pacienteInvolucrado = pacienteService.buscarPorID(id);
-        if(pacienteInvolucrado.isPresent()){
-            pacienteService.borrarPorId(id);
-            String jsonResponse = "{\"mensaje\" : \"El paciente fue eliminado\"}";
-            return ResponseEntity.ok(jsonResponse);
-        }else {
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
-        }
+        pacienteService.borrarPorId(id);  //si se lanza la excepcion aqui, se corta toda la pila y lo de abajo no se ejecuta.
+        String jsonResponse = "{\"mensaje\" : \"El paciente fue eliminado\"}";
+        return ResponseEntity.ok(jsonResponse);
     }
 
 

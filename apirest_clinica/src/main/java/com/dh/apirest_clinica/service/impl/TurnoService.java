@@ -8,6 +8,7 @@ import com.dh.apirest_clinica.dto.response.TurnoResponseDto;
 import com.dh.apirest_clinica.entity.Odontologo;
 import com.dh.apirest_clinica.entity.Paciente;
 import com.dh.apirest_clinica.entity.Turno;
+import com.dh.apirest_clinica.exception.ResourceNotFoundException;
 import com.dh.apirest_clinica.repository.ITurnoRepository;
 import com.dh.apirest_clinica.service.ITurnoService;
 import org.modelmapper.ModelMapper;
@@ -112,6 +113,10 @@ public class  TurnoService implements ITurnoService {
 
     @Override
     public void eliminarTurno(Integer id) {
+        Optional<Turno> turnoEncontrado = iTurnoRepository.findById(id);
+        if(turnoEncontrado.isEmpty()){
+            throw new ResourceNotFoundException("El turno a eliminar no fue encontrado");
+        }
         iTurnoRepository.deleteById(id);
     }
 

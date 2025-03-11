@@ -49,4 +49,11 @@ public class TurnoController {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
         }
     }
+
+    @DeleteMapping("/eliminar/{id}")
+    public ResponseEntity<String> eliminarTurno(@PathVariable Integer id){
+        turnoService.eliminarTurno(id);
+        String jsonResponse = "{\"mensaje\" : \"El Turno fue eliminado\"}";
+        return ResponseEntity.ok(jsonResponse);
+    }
 }
