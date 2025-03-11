@@ -25,8 +25,8 @@ public class Odontologo {
     private String nombre;
 
     @OneToMany(mappedBy = "odontologo") //definimos que un odon. maneja muchos turnos
-    //@JsonManagedReference(value = "odontologo-turno") //1era forma de manejar que el json no se haga ciclico, reduciendo la visibilidad en Turnos
-    @JsonIgnore //2da forma solo se usa desde la parte de 1
+    @JsonManagedReference(value = "odontologo-turno") //1era forma de manejar que el json no se haga ciclico, reduciendo la visibilidad en Turnos
+    //@JsonIgnore //2da forma solo se usa desde la parte de 1
     private Set<Turno> turnoSet;
 
 

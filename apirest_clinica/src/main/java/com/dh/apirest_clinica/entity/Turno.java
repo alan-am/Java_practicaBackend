@@ -21,10 +21,10 @@ public class Turno {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     @ManyToOne //varios turnos pertenecen a un mismo paciente y odontologo
-    //@JsonBackReference(value = "paciente-turno")//oculta la parte de paciente-turnos cuando se visualiza el turno
+    @JsonBackReference(value = "paciente-turno")//oculta la parte de paciente-turnos cuando se visualiza el turno
     private Paciente paciente;
     @ManyToOne
-    //@JsonBackReference(value = "odontologo-turno") //1era forma de manejar que el json no se haga ciclico, reduciendo la visibilidad en Turnos
+    @JsonBackReference(value = "odontologo-turno") //1era forma de manejar que el json no se haga ciclico, reduciendo la visibilidad en Turnos
     private Odontologo odontologo;
     private LocalDate fecha;
 

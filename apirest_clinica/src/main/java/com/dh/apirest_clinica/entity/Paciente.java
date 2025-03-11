@@ -30,8 +30,8 @@ public class Paciente {
     @OneToOne(fetch = FetchType.EAGER,  cascade = CascadeType.ALL)  //relacion uno a uno - unidireccional, pq domicilio no tiene especificado nada respecto a paciente
     private Domicilio domicilio;
     @OneToMany(mappedBy = "paciente", cascade = CascadeType.REMOVE) //esta relacionado con la columna paciente de Turno, y propaga la eliminacion de un paciente y sus turnos.
-    //@JsonManagedReference(value = "paciente-turno")
-    @JsonIgnore
+    @JsonManagedReference(value = "paciente-turno")
+    //@JsonIgnore
     private Set<Turno> turnoSet;
 
 

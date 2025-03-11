@@ -10,8 +10,10 @@ import com.dh.apirest_clinica.entity.Paciente;
 import com.dh.apirest_clinica.entity.Turno;
 import com.dh.apirest_clinica.repository.ITurnoRepository;
 import com.dh.apirest_clinica.service.ITurnoService;
+import org.modelmapper.ModelMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
@@ -25,6 +27,8 @@ public class  TurnoService implements ITurnoService {
     private PacienteService pacienteService;
     private OdontologoService odontologoService;
     private ITurnoRepository iTurnoRepository;
+    @Autowired //otra forma de hacer inyeccion de dependencia sin desarmar el constructor
+    private ModelMapper modelMapper;
 
     public TurnoService(PacienteService pacienteService, OdontologoService odontologoService, ITurnoRepository iTurnoRepository) {
         this.pacienteService = pacienteService;
@@ -109,5 +113,13 @@ public class  TurnoService implements ITurnoService {
     @Override
     public void eliminarTurno(Integer id) {
         iTurnoRepository.deleteById(id);
+    }
+
+    //uso de modelMapper en vez de la funcion hecha a mano (no implementado)
+    private TurnoResponseDto mapperATurnoResponse(Turno turno){
+        TurnoResponseDto turnoResponseDto = modelMapper.map(turno, TurnoResponseDto.class);
+        turnoResponseDto.setOdontologoResponseDto(modelMapper.map(turno.getOdontologo(), OdontologoResponseDto.class));
+        turnoResponseDto.setPacienteResponseDto(modelMapper.map(turno.getPaciente(), PacienteResponseDto.class));
+        return turnoResponseDto;
     }
 }
